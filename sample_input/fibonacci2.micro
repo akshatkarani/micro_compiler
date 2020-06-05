@@ -1,0 +1,45 @@
+PROGRAM fibonacci2
+BEGIN
+
+	STRING input := "Please input an integer number: ";
+	STRING space := " ";
+	STRING eol := "\n";
+
+
+	FUNCTION INT F (INT n)
+	BEGIN
+		INT ret1,ret2;
+		IF (n > 2)
+			ret1 := F(n-1);
+			ret2 := F(n-2);
+			RETURN ret1+ret2;
+		ELSE
+            IF (n = 0)   #This is a comment
+                RETURN 0;
+            ELSE
+                IF (n = 1)
+                    RETURN 1;
+                ELSE
+                    RETURN 1;
+                FI    
+            FI
+		FI
+	END
+	
+	
+	FUNCTION INT main ()
+	BEGIN
+		INT i, end, result;		
+		WRITE(input);
+		READ(end);
+
+ 		FOR (i := 0; i != end; i := i + 1)
+			result := F(i);
+			WRITE (i,space);
+			WRITE (result,eol);
+		ROF
+
+		RETURN 0;
+	END
+
+END	
