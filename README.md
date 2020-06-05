@@ -47,7 +47,7 @@ Main parts of this compiler are
 
 1. Lexical analyzer: This is written using flex and code is in the file [scanner.l](/scanner.l)
 2. Parser: This is written using bison and code is in the file [parser.y](parser.y)
-3. Code Generation: Code Generation is divided into two parts. First Three Address Code in generated which is then converted into assembly level code.
+3. Code Generation: Code Generation is divided into two parts. First Three Address Code in generated which is then converted into assembly level code. This code can be found in [utils](/utils)
 
 ## About
 
